@@ -1,7 +1,10 @@
 $(document).ready(function() {
 	$("form").on("submit", function(e) {
 		e.preventDefault();
-	})
+
+		var $userInput = $(".numbers").val();
+        console.log($userInput);
+
 
 	for (var i = 1; i<=100; i++) {
 
@@ -17,10 +20,11 @@ $(document).ready(function() {
 			$("body").append("<li>" +"buzz"+ "</li>");
 	}
 		else {
-			$("body").append(i);
+			$("body").append("<li>" +i+ "</li>");
 		}
 
 	}
+		})
 
 	})
 
