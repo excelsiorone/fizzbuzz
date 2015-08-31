@@ -1,12 +1,9 @@
 $(document).ready(function() {
-	$("form").on("submit", function(e) {
-		e.preventDefault();
+var userGuess = +prompt("Welcome !, please enter number");
 
-		var $userInput = $(".numbers").val();
-        console.log($userInput);
+function fizzBuzz(input) {
 
-
-	for (var i = 1; i<=100; i++) {
+		for (var i = 1; i <=input; i++) {
 
 		if (i % 3 === 0 && i % 5 === 0) {
 			$("body").append("<li>" +"FizzBuzz"+ "</li>");
@@ -24,9 +21,15 @@ $(document).ready(function() {
 		}
 
 	}
-		})
+}
 
-	})
+		fizzBuzz(userGuess);
+
+		});
+
+		
+
+	
 
 	
 
